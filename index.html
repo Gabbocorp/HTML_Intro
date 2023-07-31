@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Aquí puedo escribir en cualquier nivel, un comentario o una nota que dejo pero no aparecerá en el navegador-->
+    <meta charset="utf-8" /> <!--hace que se identifiquen tildes y signos como la "ñ"-->
+    <title>Inicio_Gabbo</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="index.html"> Inicio</a>
+        </li>
+        <li>
+            <a href="Html+CSS.html"> Ejercicios</a>
+        </li>
+        <li>
+            <a href="CSS.html"> CSS</a>
+        </li>
+    </ul>
+    <h1>Títulos (encabezado, título o Heading) y cuerpo de texto</h1>
+    <h1>Primer Heading</h1>
+    <h2>Segundo heading</h2>
+    <h3>Tercer heading</h3>
+    <h4>Cuarto heading</h4>
+    <h5>quinto heading</h5>
+    <h6>sexto heading para buscadores</h6>
+
+    <p>
+        Ahora el cuerpo de texto,
+        podría escribir en renglones separados, pero todo esto aparece seguido en el browser o navegador.
+    </p>
+
+    <p>
+    Aquí va una párrafo nuevo, debo comenzarlo con el comando "p", claro que también puedo pasar a la siguiente línea 
+    <br>
+    utilizando el comando "br" como en este caso.
+    </p>
+
+    <p>
+    Si yo quiero <span style="color:red">destacar</span> parte de un texto, utilizo el comando "span"
+    </p>
+
+    <p>
+    Si yo quiero <span style="color:blueviolet">destacar o realizar otro efecto</span> uso <span style="color:crimson">
+    </span> "comando span"</span> y <span style="color:crimson"> "código CSS"</span> y sigo... 
+    </p>
+
+    <br><br>
+    <p>Los espacios que acabo de crear, los he hecho con "br"</p>
+
+    <hr> 
+    comando "hr" dibuja una línea (...y si escribo algo enseguida del comando, este texto se escribe debajo de la línea)
+
+    <h2>Hipervínculo</h2>
+    <p>Ahora veamos cómo crear un "hipervínculo o link" a otra página o dentro de la misma web con el comando "a"(=ancor)=(ancla)
+    <br>
+    agregando: target="_blank" (para que vaya a una pestaña nueva y href="http://dirección exacta")</p><br>
+    <a target="_blank" href="https://www.google.com">ir a Google</a><br>
+
+    <hr>
+    <h2>Insertar imagen</h2> <!--ahora coloco una imágen-->
+    <p>También puedo cargar una imagen con el comando "img" indicándole la ubicación con "src="xx" <br>
+        y le puedo dar un tamaño específico con width="x-pxls" & "height="x-pxls" </p>
+    <img src="imgs/Armónica.png" width="400"/>
+    <hr>
+    
+    <h2>Formulario</h2> <!--cómo recoger y enviar info en una página web-->
+    <form action="/formulario" method="post">
+        <label>Prueba</label> <!--simple, click no se pega a la caja para escribir-->
+        <input value="valor por defecto" type="text" placeholder="no selecciona escritura"/>
+        <br>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" placeholder="ej.: Juan Carlos Rodríguez Pérez"/>
+        <br>
+        <label for="#documento">No. de cédula:</label>
+        <input type="text" id="#documento" placeholder="c.c. 123456789"/>
+        <br>
+        <br>
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Escriba por favor sus comentarios" name="comentario"></textarea>
+        <!--puedo escribir un valor por defecto antes del cierre de >aqui valor por defecto</textarea>-->
+        
+        <h4>Botones de envío</h4>
+        <input type="submit" /> input type "submit o enviar" <!--a esta propiedad type= "submit" no le podemos agregar más etiquetas-->
+
+        <br>
+        <!--mejor podemos utilizar otro tipo de etiqueta más personalizable "button"-->
+        <button type="button">tipo botón</button> se programa con javascript <br>
+        <button type="reset">tipo Reset</button> resetea los valores de los campos <br>
+        <button type="submit">tipo enviar</button> o submit envía lo que está en la cabecera de form <br>
+        <button type="submit">tipo enviar</button><img src="imgs/Armónica.png" width="50" /> igual y puedo agregarles a todos los "button" x-ej. una imágen <br>
+    </form>
+
+    <hr>
+    <h2>Listas</h2>
+    <!--ul es una lista NO ORDENADA-->
+    <!--li es un (list item) item de lista-->
+    <ul>
+        <li>item de lista 1</li>
+        <li>item de lista 2</li>
+        <li>item de lista 3</li>
+        <li>item de lista 4</li>
+    </ul>
+    <!--ol es una lista ORDENADA-->
+    <ol>
+        <li>item de lista 1</li>
+        <li>item de lista 2</li>
+        <li>item de lista 3</li>
+        <li>item de lista 4</li>
+    </ol>
+    <ol>
+        <!--li value="x" le dice a la lista desde qué número comenzar-->
+        <li value="50">item de lista 1</li>
+        <li>item de lista 2</li>
+            <ol>
+                <li style="list-style-type:lower-alpha;">sub item 1</li>
+                <li style="list-style-type:lower-alpha;">sub item 2</li>
+                    <ol>
+                        <li style="list-style-type:lower-roman;">sub, sub item 1</li>
+                        <li style="list-style-type:lower-roman;">sub, sub item 2</li>
+                            <ol>
+                                <li style="list-style-type:lower-greek;">sub, sub, sub item 1</li>
+                                <li style="list-style-type:lower-greek;">sub, sub, sub item 2</li>
+                                <li style="list-style-type:lower-greek;">sub, sub, sub item 3</li>
+                            </ol>
+                        <li style="list-style-type:lower-roman;">sub, sub item 3</li>
+                    </ol>
+                <li style="list-style-type:lower-alpha;">sub item 3</li>
+                <li style="list-style-type:lower-alpha;">sub item 4</li>
+            </ol>
+        </li>
+        <li>item de lista 3</li>
+        <li>item de lista 4</li>
+    </ol>
+
+    <hr>
+    <h2>Tablas</h2> listar y distribuir filas y columnas con cabecera y pie
+
+    <table>
+        <tr><!--table row o fila de la tabla-->
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Chaqueta deportiva impermeable</td>
+            <td>1 unid.</td>
+            <td>$ 200.000</td>
+        </tr>
+        <tr>
+            <td>Pantalón táctico bolsillos</td>
+            <td>1 unid.</td>
+            <td>$ 150.000</td>
+        </tr>
+        <tr>
+            <td>Camisas nueva colección de verano</td>
+            <td>1 unid.</td>
+            <td>$ 100.000</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Navegar</h2>
+    <ul>
+        <li>
+            <a href="index.html"> Inicio</a>
+        </li>
+        <li>
+            <a href="Html+CSS.html"> Ejercicios</a>
+        </li>
+        <li>
+            <a href="CSS.html"> CSS</a>
+        </li>
+    </ul>
+</body>
+</html> 

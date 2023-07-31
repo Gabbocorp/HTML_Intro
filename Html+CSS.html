@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="index.html"> Inicio</a>
+        </li>
+        <li>
+            <a href="Html+CSS.html"> Ejercicios</a>
+        </li>
+        <li>
+            <a href="CSS.html"> CSS</a>
+        </li>
+    </ul>
+    <hr>
+    <Header>
+    <!--Se usa para agrupar links, para incrustar imagenes o logo.-->
+    <!--Se pueden crear cuantas etiquetas de "Header" necesitemos, siempre y cuando cumplan con dos reglas-->
+    <!--La primera: No podemos colocar una etiqueta de "Header" dentro de otra etiqueta de "Header"-->
+    <!--La segunda: No podemos colocar una etiqueta de "Header", dentro de una etiqueta de "Footer"-->
+        <h1 id="título">Blog de Gabbo</h1>
+    </Header>
+
+    <Section>
+        <!--podemos definir secciones de nuestra aplicación, pudiendo colocar las etiquetas que necesitemos-->
+        <article class="post"><!--_Se utiliza para definir contenido independiente, ej. los post de un blog, 
+            que contenga título, descripción, imagen, párrafo que va a contener todo el texto del post,
+            se puede utilizar para una historia de noticias, en facebook para enmarcar una publicación, para un tweet,
+            o una imágen en el caso de instagram, imagen descripción, comentarios, etc.-->
+            <h2>Título del post</h2>
+            <p>Descripción de mi post</p>
+            <img src="imgs/arroyo1.jpg" width="450" />
+            <p>Texto descriptivo del blog, en este caso un texto de prueba,simplemente <br> 
+                como colocación, pero que sea representativode un texto para un medio <br> 
+                con el fin de comunicar algo, así que este es simplemente de prueba.</p>
+        </article>
+        <article class="post">
+            <h2>Título del post #2</h2>
+            <p>Descripción de mi post</p>
+            <img src="imgs/frutas.jpeg" width="450" />
+            <p>Texto descriptivo del blog, en este caso un texto de prueba,simplemente <br> 
+                como colocación, pero que sea representativode un texto para un medio <br> 
+                con el fin de comunicar algo, así que este es simplemente de prueba.</p>
+        </article>
+        <article class="post">
+            <h2>Título del post #3</h2>
+            <p>Descripción de mi post</p>
+            <img src="imgs/IMG-20160111-WA0060-1.jpg" width="450" />
+            <p>Texto descriptivo del blog, en este caso un texto de prueba,simplemente <br> 
+                como colocación, pero que sea representativode un texto para un medio <br> 
+                con el fin de comunicar algo, así que este es simplemente de prueba.</p>
+        </article>
+    </Section>      
+    <h1>Tabla</h1>
+    <table style="width: 450px;">
+        <thead><!--agrupa cabeceras en nuestras tablas, para que algunos navegadores hagan un scroll del contenido-->
+            <tr><!--table row o fila de la tabla-->
+                <th>PRODUCTO</th>
+                <th>CANTIDAD</th>
+                <th>PRECIO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chaqueta deportiva impermeable</td>
+                <td>1 unid.</td>
+                <td>$ 200.000</td>
+            </tr>
+            <tr>
+                <td>Pantalón táctico bolsillos</td>
+                <td>1 unid.</td>
+                <td>$ 150.000</td>
+            </tr>
+            <tr>
+                <td>Camisas nueva colección de verano</td>
+                <td>1 unid.</td>
+                <td>$ 100.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>TOTALES</td>
+            <td>3 Unids.</td>
+            <td>$ 450.000</td>
+        </tfoot>
+    </table>
+    <footer>
+        <!--Se usa para colocar el pie de página de la página web 
+        -copy right, info de contacto, info del sitio o cómo navegar dentro de él, links para poder volver al comienzo, 
+        de la página web, info del autor, etc-->
+            <a href="#título">ir al comienzo</a>
+            <a href="mailito:gabrielarroy@gmail.com">Contáctame aquí</a>
+            <p>© Copyright 2023 TLDA</p>
+    </footer>
+    
+    <hr>
+    <h2>Navegar</h2>
+    <ul>
+        <li>
+            <a href="index.html"> Inicio</a>
+        </li>
+        <li>
+            <a href="Html+CSS.html"> Ejercicios</a>
+        </li>
+        <li>
+            <a href="CSS.html"> CSS</a>
+        </li>
+    </ul>
+</body>
+</html>
